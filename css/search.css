@@ -1,0 +1,39 @@
+/* search.css */
+
+.search-container {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    /* Align search to the right intuitively, or center */
+}
+
+.tiles-search {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 20px;
+    font-size: 16px;
+    color: var(--color-text-primary);
+    background: rgba(255, 255, 255, 0.05);
+    /* subtle glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tiles-search:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-cap-light-blue);
+    box-shadow: 0 4px 12px rgba(0, 176, 202, 0.2);
+}
+
+.tiles-search::placeholder {
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+}
+
+/* Add a smooth hide animation for tiles being filtered out */
+.tile.hidden-by-search {
+    display: none !important;
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 30-60: Exploration | Platform Engineering Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/tiles.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="content-island">
+            <header class="navbar">
+                <div class="container container--nav">
+                    <div class="navbar__logo"><img src="../assets/capgemini-logo.svg" alt="Capgemini"
+                            style="height: 36px; width: auto; display: block;"></div>
+                    <nav class="navbar__menu">
+                        <a href="index.html">Home</a>
+                        <a href="foundation.html">Foundation</a>
+                        <a href="exploration.html">Exploration</a>
+                        <a href="building.html">Building</a>
+                        <a href="delivery.html">Delivery</a>
+                    </nav>
+                    <div class="navbar__actions" style="display: flex; align-items: center; gap: 20px;">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme" style="background: none; border: none; cursor: pointer; color: var(--color-text-primary); display: flex; align-items: center; justify-content: center; padding: 8px; border-radius: 50%; background-color: var(--color-bg-light); transition: all 0.3s ease;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        </button>
+                        <div class="navbar__toggle" id="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- Hero Section -->
+                <section class="hero hero--page">
+                    <div class="hero__overlay"></div>
+                    <div class="container hero__container">
+                        <div class="hero__content animate-on-scroll fade-in">
+                            <span class="hero__pre-heading">Day 30-60</span>
+                            <h1 class="hero__page-heading">Exploration</h1>
+                            <p class="hero__paragraph">Transitioning from foundational knowledge to deep structural
+                                thinking.
+                                This phase encourages engineers to question, debate, and architect robust solutions.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Page Specific Content -->
+                <section class="section section--angled page-content">
+                    <div class="container">
+                        <div class="content-block animate-on-scroll fade-in">
+                            <h2>Phase Description</h2>
+                            <p>The Exploration phase is all about critical thinking and system design. Engineers engage
+                                in
+                                complex architectural discussions and debates. They learn to evaluate trade-offs,
+                                understand
+                                microservices boundaries, and design scalable platforms that meet enterprise
+                                requirements.</p>
+                        </div>
+
+                        <div class="content-grid">
+                            <div class="content-block animate-on-scroll stagger-in">
+                                <h3>Key Technologies</h3>
+                                <ul>
+                                    <li><strong>System Design:</strong> Architectural patterns and anti-patterns.</li>
+                                    <li><strong>Cloud Architecture:</strong> Multi-region deployments and high
+                                        availability.
+                                    </li>
+                                    <li><strong>Containerization:</strong> Docker and Kubernetes exploration.</li>
+                                </ul>
+                            </div>
+                            <div class="content-block animate-on-scroll stagger-in">
+                                <h3>Learning Journey</h3>
+                                <ul>
+                                    <li>Deep engineering debates & peer reviews</li>
+                                    <li>Architecture whiteboarding sessions</li>
+                                    <li>Platform concepts and domain-driven design</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <div class="section-header">
+                            <h2>Engineering Debates</h2>
+                        </div>
+                        <div class="search-container">
+                            <input type="text" id="searchTiles" class="tiles-search" placeholder="Search">
+                        </div>
+                        <div class="tiles-grid">
+                            <div class="tile" data-modal="true" data-title="Google ADK vs LangChain"
+                                data-phase="Engineering Debate 1"
+                                data-desc="Google’s Agent Developer Kit (ADK) is a framework optimized for building agents within Google’s ecosystem. LangChain is an open‑source framework for building LLM apps and agents with broad model, tool, and infrastructure flexibility."
+                                data-outcomes='["ADK excels in Google-native workflows, deep integration, and performance.", "LangChain wins for ecosystem neutrality, community support, and multi\u2011model orchestration.", "Choose ADK if fully invested in Google Cloud; choose LangChain for portability."]'
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Google ADK vs LangChain">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 1</span>
+                                    <h3 class="tile__title">Google ADK vs LangChain</h3>
+                                    <p class="tile__description">Google’s Agent Developer Kit (ADK) is a framework
+                                        optimized for building agents within Google’s ecosystem. LangChain is an
+                                        open‑source framework for building LLM apps and agents with broad model, tool,
+                                        and infrastructure flexibility.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="CrewAI vs LangChain"
+                                data-phase="Engineering Debate 2"
+                                data-desc="CrewAI is focused on multi-agent collaboration, defining agent roles, tasks, and teamwork patterns. LangChain focuses on building pipelines, retrieval, and tools, with optional agent support."
+                                data-outcomes='["CrewAI is better for coordinated agent teams.", "LangChain is better for enterprise pipelines, retrieval, and integrations.", "Often used together: LangChain for tooling + CrewAI for agent workflows."]'
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="CrewAI vs LangChain">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 2</span>
+                                    <h3 class="tile__title">CrewAI vs LangChain</h3>
+                                    <p class="tile__description">CrewAI is focused on multi-agent collaboration,
+                                        defining agent roles, tasks, and teamwork patterns. LangChain focuses on
+                                        building pipelines, retrieval, and tools, with optional agent support.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Microsoft Agent Framework vs LangChain"
+                                data-phase="Engineering Debate 3"
+                                data-desc="The Microsoft Agent Framework provides a structured way to build orchestrated AI agents integrated with Microsoft 365, Azure OpenAI, and enterprise data. LangChain remains broader and more tool-based."
+                                data-outcomes='["Microsoft excels in enterprise governance, grounding, identity, and secure data access.", "LangChain\u2019s advantage is flexibility across models and platforms.", "Choose Microsoft for enterprise compliance; LangChain for rapid experimentation."]'
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400" alt="Microsoft Agent Framework vs LangChain">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 3</span>
+                                    <h3 class="tile__title">Microsoft Agent Framework vs LangChain</h3>
+                                    <p class="tile__description">The Microsoft Agent Framework provides a structured way
+                                        to build orchestrated AI agents integrated with Microsoft 365, Azure OpenAI, and
+                                        enterprise data. LangChain remains broader and more tool-based.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Strands Agent vs LangChain"
+                                data-phase="Engineering Debate 4"
+                                data-desc="Strands is Microsoft’s new orchestrated AI Agent system built on top of the Foundry architecture. It focuses on autonomous task decomposition and orchestration. LangChain focuses more on tool-wrapping and chaining."
+                                data-outcomes='["Strands is strong for automated planning and task decomposition.", "LangChain is easier for building simple, tool-heavy apps.", "Strands offers deeper integration with Microsoft AI Foundry."]'
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="Strands Agent vs LangChain">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 4</span>
+                                    <h3 class="tile__title">Strands Agent vs LangChain</h3>
+                                    <p class="tile__description">Strands is Microsoft’s new orchestrated AI Agent system
+                                        built on top of the Foundry architecture. It focuses on autonomous task
+                                        decomposition and orchestration. LangChain focuses more on tool-wrapping and
+                                        chaining.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Weaviate vs MongoDB Atlas Vector Search"
+                                data-phase="Engineering Debate 5"
+                                data-desc="Weaviate is a vector-native database designed for semantic search and AI apps. MongoDB Atlas adds vector search features to a general document database."
+                                data-outcomes='["Weaviate is better for pure vector workloads, hybrid search, and advanced RAG.", "MongoDB is better for general operational data + vectors in one system.", "Choose based on whether you need vector-first or document-first architecture."]'
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Weaviate vs MongoDB Atlas Vector Search">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 5</span>
+                                    <h3 class="tile__title">Weaviate vs MongoDB Atlas Vector Search</h3>
+                                    <p class="tile__description">Weaviate is a vector-native database designed for
+                                        semantic search and AI apps. MongoDB Atlas adds vector search features to a
+                                        general document database.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Python vs JavaScript/TypeScript for AI Apps"
+                                data-phase="Engineering Debate 6"
+                                data-desc="Python dominates in model development, prototyping, and data work. JavaScript/TypeScript dominate frontend, full‑stack, and edge AI."
+                                data-outcomes='["Python \u2192 best for ML engineering, backend agents, scientific tools.", "TypeScript \u2192 best for production web apps, serverless, and AI frontends.", "Many teams use Python for backend agents + TypeScript for frontend integration."]'
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Python vs JavaScript/TypeScript for AI Apps">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 6</span>
+                                    <h3 class="tile__title">Python vs JavaScript/TypeScript for AI Apps</h3>
+                                    <p class="tile__description">Python dominates in model development, prototyping, and
+                                        data work. JavaScript/TypeScript dominate frontend, full‑stack, and edge AI.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Apache Iceberg vs Delta Lake"
+                                data-phase="Engineering Debate 7"
+                                data-desc="Iceberg and Delta Lake are open-table formats for data lakes. Iceberg is vendor-neutral, while Delta Lake is Databricks-optimized but now open source."
+                                data-outcomes='["Iceberg \u2192 strongest ecosystem neutrality and cloud compatibility.", "Delta \u2192 strongest with Databricks and mature ACID features.", "Both are solid; choice depends on platform preference."]'
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="Apache Iceberg vs Delta Lake">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 7</span>
+                                    <h3 class="tile__title">Apache Iceberg vs Delta Lake</h3>
+                                    <p class="tile__description">Iceberg and Delta Lake are open-table formats for data
+                                        lakes. Iceberg is vendor-neutral, while Delta Lake is Databricks-optimized but
+                                        now open source.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Pulumi vs Terraform for AI Infrastructure"
+                                data-phase="Engineering Debate 8"
+                                data-desc="Terraform uses declarative HCL; Pulumi uses real programming languages (Python, TS, Go) for IaC."
+                                data-outcomes='["Pulumi \u2192 great for AI infra due to programmability, dynamic configs, loops, and SDKs.", "Terraform \u2192 better for static infra, broad module ecosystem.", "Pulumi feels more natural for LLM pipelines, GPU orchestration, and dynamic environments."]'
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400" alt="Pulumi vs Terraform for AI Infrastructure">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 8</span>
+                                    <h3 class="tile__title">Pulumi vs Terraform for AI Infrastructure</h3>
+                                    <p class="tile__description">Terraform uses declarative HCL; Pulumi uses real
+                                        programming languages (Python, TS, Go) for IaC.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Microservices vs Event-Driven Architecture"
+                                data-phase="Engineering Debate 9"
+                                data-desc="Microservices break the system into small services with APIs. Event-driven architecture connects components through asynchronous events."
+                                data-outcomes='["Microservices \u2192 predictable, API-first, easier for synchronous apps.", "Event-driven \u2192 scalable, real-time, ideal for streaming and async AI workflows.", "Most modern AI systems adopt hybrid: microservices + event streams."]'
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="Microservices vs Event-Driven Architecture">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 9</span>
+                                    <h3 class="tile__title">Microservices vs Event-Driven Architecture</h3>
+                                    <p class="tile__description">Microservices break the system into small services with
+                                        APIs. Event-driven architecture connects components through asynchronous events.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Microsoft Foundry: Platform vs Lock-in"
+                                data-phase="Engineering Debate 10"
+                                data-desc="Microsoft Foundry is a platform for building enterprise AI apps with orchestration, safety, grounding, and governance. The debate is between deep integration advantages vs vendor lock‑in risks."
+                                data-outcomes='["Advantages: security, identity, M365 integration, compliance, orchestration, agents.", "Lock\u2011in concerns: reliance on Azure services, APIs, and closed components.", "Most enterprises accept some lock-in for the productivity benefits."]'
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Microsoft Foundry: Platform vs Lock-in">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 10</span>
+                                    <h3 class="tile__title">Microsoft Foundry: Platform vs Lock-in</h3>
+                                    <p class="tile__description">Microsoft Foundry is a platform for building enterprise
+                                        AI apps with orchestration, safety, grounding, and governance. The debate is
+                                        between deep integration advantages vs vendor lock‑in risks.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="REST API vs GraphQL for AI Data Access"
+                                data-phase="Engineering Debate 11"
+                                data-desc="REST uses resource-based endpoints; GraphQL allows querying exactly the fields you want."
+                                data-outcomes='["REST \u2192 simpler, predictable, widely supported.", "GraphQL \u2192 reduces over-fetching, great for AI apps needing customizable data retrieval.", "For AI: GraphQL works better in RAG systems, REST for model inference APIs."]'
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources='[{"label": "Debate Recordings", "link": "#"}]'>
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="REST API vs GraphQL for AI Data Access">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Engineering Debate 11</span>
+                                    <h3 class="tile__title">REST API vs GraphQL for AI Data Access</h3>
+                                    <p class="tile__description">REST uses resource-based endpoints; GraphQL allows
+                                        querying exactly the fields you want.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block outcome-block animate-on-scroll fade-in">
+                            <h2>Outcome</h2>
+                            <p>At the end of day 60, our engineers are no longer just writing code. They are designing
+                                scalable,
+                                fault-tolerant systems and can confidently present and defend their architectural
+                                decisions.</p>
+                        </div>
+
+                        <div class="page-navigation animate-on-scroll fade-in">
+                            <a href="foundation.html" class="btn btn--secondary">&larr; Previous: Foundation</a>
+                            <a href="building.html" class="btn btn--primary">Next Phase: Building &rarr;</a>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__brand">
+                        <div class="footer__logo">
+                            <img src="../assets/capgemini-logo.svg" alt="Capgemini" style="height: 36px; width: auto; display: block;">
+                        </div>
+                        <p class="footer__tagline">Driving enterprise modernization through data and engineering.</p>
+                        <div class="footer__socials" style="display: flex; gap: 16px; margin-top: 24px;">
+                            <a href="#" aria-label="LinkedIn" style="color: rgba(255,255,255,0.7);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="#" aria-label="Twitter" style="color: rgba(255,255,255,0.7);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                            <a href="#" aria-label="GitHub" style="color: rgba(255,255,255,0.7);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="footer__links-wrapper">
+                        <div class="footer__column">
+                            <h4>Phases</h4>
+                            <div class="footer__link-list">
+                                <a href="foundation.html">Foundation</a>
+                                <a href="exploration.html">Exploration</a>
+                                <a href="building.html">Building</a>
+                                <a href="delivery.html">Delivery</a>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <h4>Resources</h4>
+                            <div class="footer__link-list">
+                                <a href="#">Documentation</a>
+                                <a href="#">Case Studies</a>
+                                <a href="#">Frameworks</a>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <h4>Company</h4>
+                            <div class="footer__link-list">
+                                <a href="#">About</a>
+                                <a href="#">Careers</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="container footer__bottom-container">
+                        <p>&copy; 2026 Global AI & Analytics. All rights reserved.</p>
+                        <div class="footer__bottom-links">
+                            <a href="#">Privacy notice</a>
+                            <a href="#">Cookie policy</a>
+                            <a href="#">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="back-to-top" class="back-to-top" aria-label="Back to Top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </div>
+            <script src="../js/theme-toggle.js"></script>
+            <script src="../js/navigation.js"></script>
+            <script src="../js/animations.js"></script>
+            <script src="../js/interactions.js"></script>
+            <script src="../js/search.js"></script>
+            <script src="../js/modal.js"></script>
+
+            <!-- Modal Markup (Exploration Specific) -->
+            <div id="tileModalOverlay" class="modal-overlay">
+                <div class="modal-content">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-left">
+                        <img id="modalImg" src="" alt="Thumbnail">
+                    </div>
+                    <div class="modal-right">
+                        <span id="modalPhase" class="modal-phase"></span>
+                        <h2 id="modalTitle" class="modal-title"></h2>
+                        <p id="modalDesc" class="modal-description"></p>
+
+                        <div class="modal-section-title">Outcomes & Learnings</div>
+                        <ul id="modalOutcomes" class="modal-description"
+                            style="font-size: 15px; background: rgba(0,176,202,0.05); padding: 12px 12px 12px 30px; border-left: 3px solid var(--color-cap-cyan); border-radius: 4px; list-style-type: disc; margin-top: 0; line-height: 1.6;">
+                        </ul>
+
+                        <div class="modal-section-title">Key Resources</div>
+                        <ul id="modalResources" class="modal-resources"></ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End content-island -->
+    </div><!-- End page-wrapper -->
+</body>
+
+</html>

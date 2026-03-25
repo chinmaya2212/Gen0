@@ -1,0 +1,261 @@
+/* Container Layout & Spotify "Island" Structure */
+/* The main page wrapper simulates the dark/light exterior background */
+.page-wrapper {
+    background-color: var(--color-bg-light);
+    /* Exterior background */
+    padding: 88px 24px 24px 24px;
+    /* 64px navbar + 24px inset */
+    min-height: 100vh;
+}
+
+/* The Island is the actual white content area */
+.content-island {
+    background-color: var(--color-white);
+    border-radius: 16px;
+    /* Spotify rounded corners */
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    /* Keep angled sections inside */
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    /* Center the island on very large screens */
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    /* Reduced slightly to fit nice inside the island padding */
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section {
+    padding: 60px 0;
+    /* Reduced from 120px to tighten up space */
+    position: relative;
+}
+
+/* Capgemini angled section background feature */
+.section--angled {
+    background-color: var(--color-bg-light);
+    margin-top: -60px;
+    /* Pull up to overlap */
+    padding-top: 100px;
+    /* Reduced to bring content higher */
+    z-index: 2;
+    clip-path: polygon(0 4vw, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Spotify CTA Banner Signature Style */
+.cta-banner {
+    background: linear-gradient(135deg, var(--color-cap-cyan) 0%, var(--color-primary) 100%);
+    color: var(--color-white);
+    padding: 100px 40px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 0 40px 60px 40px;
+    /* Inset CTA banner */
+    box-shadow: 0 12px 32px rgba(0, 112, 173, 0.2);
+}
+
+.cta-banner__heading {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--color-white);
+    margin-bottom: 24px;
+}
+
+.cta-banner__paragraph {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-banner .btn--secondary {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.cta-banner .btn--secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-cap-cyan);
+}
+
+/* Footer Header */
+.footer {
+    background-color: var(--color-cap-navy);
+    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+/* Gradient Top Bar Accent */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--color-cap-cyan) 0%, var(--color-primary) 100%);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding-bottom: 60px;
+}
+
+.footer__brand {
+    max-width: 350px;
+}
+
+.footer__logo {
+    margin-bottom: 24px;
+}
+
+.footer__logo img {
+    height: 48px;
+    width: auto;
+    display: block;
+}
+
+.footer__tagline {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.footer__socials a {
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer__socials a:hover {
+    color: var(--color-cap-cyan) !important;
+    transform: translateY(-2px);
+}
+
+.footer__links-wrapper {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.footer__column {
+    min-width: 140px;
+}
+
+.footer__column h4 {
+    color: var(--color-white);
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.footer__link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__link-list a {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footer__link-list a:hover {
+    color: var(--color-cap-cyan);
+    transform: translateX(4px);
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.footer__bottom-links {
+    display: flex;
+    gap: 32px;
+}
+
+.footer__bottom-links a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
+}
+
+.footer__bottom-links a:hover {
+    color: var(--color-white);
+}
+
+/* Animations Core */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 80px 0;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__links-wrapper {
+        gap: 40px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer__bottom-container {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer__bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

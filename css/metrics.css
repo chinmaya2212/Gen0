@@ -1,0 +1,122 @@
+/* Impact Metrics section - Capgemini Blocks */
+.metrics {
+    background-color: var(--color-cap-navy);
+    color: var(--color-white);
+    /* Override default section padding to reduce gap to footer */
+    padding-bottom: 40px !important;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    /* Flush grid */
+}
+
+/* Make header for metrics white */
+.metrics .section__heading,
+.metrics .section__subtitle {
+    color: var(--color-white);
+}
+
+.metric-card {
+    padding: 60px 40px;
+    text-align: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.metric-card:last-child {
+    border-right: none;
+}
+
+.metric-card:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Slight hover effect */
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.metric__number-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+.metric__number {
+    font-size: 80px;
+    /* Massive numbers */
+    font-weight: 700;
+    color: var(--color-cap-cyan);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
+}
+
+.metric__suffix {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-cap-cyan);
+    margin-left: 4px;
+    line-height: 1.2;
+}
+
+.metric__desc {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Overriding the gradient utility specifically for the dark background block */
+.metrics .text-gradient {
+    color: var(--color-cap-cyan) !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .metric-card {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metric-card {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .metric-card:nth-child(even) {
+        border-right: none;
+    }
+
+    .metric-card:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metric-card {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .metric-card:last-child {
+        border-bottom: none;
+    }
+}

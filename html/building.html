@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 60-90: Building | Platform Engineering Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/tiles.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="content-island">
+            <header class="navbar">
+                <div class="container container--nav">
+                    <div class="navbar__logo"><img src="../assets/capgemini-logo.svg" alt="Capgemini"
+                            style="height: 36px; width: auto; display: block;"></div>
+                    <nav class="navbar__menu">
+                        <a href="index.html">Home</a>
+                        <a href="foundation.html">Foundation</a>
+                        <a href="exploration.html">Exploration</a>
+                        <a href="building.html">Building</a>
+                        <a href="delivery.html">Delivery</a>
+                    </nav>
+                    <div class="navbar__actions" style="display: flex; align-items: center; gap: 20px;">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme" style="background: none; border: none; cursor: pointer; color: var(--color-text-primary); display: flex; align-items: center; justify-content: center; padding: 8px; border-radius: 50%; background-color: var(--color-bg-light); transition: all 0.3s ease;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        </button>
+                        <div class="navbar__toggle" id="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- Hero Section -->
+                <section class="hero hero--page">
+                    <div class="hero__overlay"></div>
+                    <div class="container hero__container">
+                        <div class="hero__content animate-on-scroll fade-in">
+                            <span class="hero__pre-heading">Day 60-90</span>
+                            <h1 class="hero__page-heading">Building</h1>
+                            <p class="hero__paragraph">Putting theory into practice through rapid prototyping and
+                                intensive
+                                hackathons. Engineers build functional solutions for complex enterprise use cases.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Page Specific Content -->
+                <section class="section section--angled page-content">
+                    <div class="container">
+                        <div class="content-block animate-on-scroll fade-in">
+                            <h2>Phase Description</h2>
+                            <p>During the Building phase, teams are organized into agile pods and tasked with solving
+                                real-world
+                                business problems. A major focus is placed on the insurance domain, challenging
+                                engineers to
+                                develop over 40 distinct use cases through rapid, iterative development cycles.</p>
+                        </div>
+
+                        <div class="content-grid">
+                            <div class="content-block animate-on-scroll stagger-in">
+                                <h3>Key Technologies</h3>
+                                <ul>
+                                    <li><strong>Development Stack:</strong> Advanced Python, Node.js, and Java
+                                        integrations.
+                                    </li>
+                                    <li><strong>Data Engineering:</strong> ETL pipelines and real-time streaming
+                                        (Kafka).</li>
+                                    <li><strong>AI Integration:</strong> Embedding predictive models and GenAI into
+                                        applications.</li>
+                                </ul>
+                            </div>
+                            <div class="content-block animate-on-scroll stagger-in">
+                                <h3>Learning Journey</h3>
+                                <ul>
+                                    <li>40+ insurance use cases</li>
+                                    <li>Intensive weekend hackathons</li>
+                                    <li>Rapid prototyping and MVP delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="section-header">
+                            <h2>Featured Prototypes</h2>
+                        </div>
+                        <div class="search-container">
+                            <input type="text" id="searchTiles" class="tiles-search" placeholder="Search">
+                        </div>
+                        <div class="tiles-grid">
+                            <div class="tile" data-modal="true" data-title="UnderwriteFlow" data-phase="Building Phase"
+                                data-desc="Intelligent underwriting flow leveraging real-time data integration to accelerate policy decisions."
+                                data-contact-name="Chinmaya Pradhan" data-contact-email="chinmaya.pradhan@capgemini.com"
+                                data-tech="LangChain, Python, FastAPI, Vertex AI"
+                                data-problem="Manual underwriting processes are slow and disconnected, delaying customer policy approvals and increasing operational overhead."
+                                data-solution="UnderwriteFlow unifies disparate data sources into a single automated pipeline using Vertex AI, significantly reducing time-to-decision and minimizing human error."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="UnderwriteFlow">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">UnderwriteFlow</h3>
+                                    <p class="tile__description">Intelligent underwriting flow leveraging real-time data
+                                        integration to accelerate policy decisions.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="Generative AI for High-Value Property Insurance" data-phase="Building Phase"
+                                data-desc="Utilizing generative models to assess high-value property risks based on unstructured documentation."
+                                data-contact-name="Avinash Singh" data-contact-email="avinash.f.singh@capgemini.com"
+                                data-tech="Generative AI, Python, Google Cloud"
+                                data-problem="High-value property assessments rely on lengthy, complex, unstructured reports that are extremely time-consuming to manually review."
+                                data-solution="Deploys Generative AI to instantly extract key risk indicators from massive unstructured property documents, generating a reliable risk summary and suggested premium instantly."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Generative AI for High-Value Property Insurance">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Generative AI for High-Value Property Insurance</h3>
+                                    <p class="tile__description">Utilizing generative models to assess high-value
+                                        property risks based on unstructured documentation.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="AI-Driven Marketing Campaign Analytics"
+                                data-phase="Building Phase"
+                                data-desc="Predictive marketing analytics utilizing AI to optimize campaign targeting and ROI."
+                                data-contact-name="Abhishek Tiwari" data-contact-email="abhishek.i.tiwari@capgemini.com"
+                                data-tech="Python, Machine Learning, GCP"
+                                data-problem="Marketing campaigns often spray-and-pray, resulting in wasted spend and poor conversion rates for specialized financial products."
+                                data-solution="Leverages predictive AI to segment customers intelligently and forecast campaign performance, allowing marketing teams to achieve maximum ROI with targeted outreach."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="AI-Driven Marketing Campaign Analytics">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI-Driven Marketing Campaign Analytics</h3>
+                                    <p class="tile__description">Predictive marketing analytics utilizing AI to optimize
+                                        campaign targeting and ROI.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="AI Claim Video Analyzer"
+                                data-phase="Building Phase"
+                                data-desc="Computer vision system that automatically analyzes claim inspection videos to estimate damages."
+                                data-contact-name="Saloni" data-contact-email="saloni.c.saloni@capgemini.com"
+                                data-tech="Computer Vision, Python, LangGraph"
+                                data-problem="Adjusters must manually watch long videos of property or vehicle damage, which is subjective and bottlenecks the claims process."
+                                data-solution="Utilizes Advanced Computer Vision to automatically scrub through claim videos, identifying and tagging structural damage frame-by-frame for instant severity estimation."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="AI Claim Video Analyzer">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI Claim Video Analyzer</h3>
+                                    <p class="tile__description">Computer vision system that automatically analyzes
+                                        claim inspection videos to estimate damages.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Generative AI for SEO (Chat Optimization)"
+                                data-phase="Building Phase"
+                                data-desc="Automated SEO optimization leveraging LLMs to restructure chat and content pipelines."
+                                data-contact-name="Gayatri Gopal Patil"
+                                data-contact-email="gayatri.gopal-patil@capgemini.com"
+                                data-tech="LLMs, LangChain, SEO Analytics"
+                                data-problem="Static SEO strategies fail to capture the long-tail conversational queries users now input into modern AI search engines."
+                                data-solution="Uses Generative AI to continuously refine and adapt digital content, making it highly discoverable for NLP-driven conversational search algorithms."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="Generative AI for SEO (Chat Optimization)">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Generative AI for SEO (Chat Optimization)</h3>
+                                    <p class="tile__description">Automated SEO optimization leveraging LLMs to
+                                        restructure chat and content pipelines.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="AI-Powered Stock Market Signal & Price Movement Analytics Platform"
+                                data-phase="Building Phase"
+                                data-desc="Real-time analytics platform digesting financial signals to forecast price movements using ML."
+                                data-contact-name="Yashika" data-contact-email="yashika.c.yashika@capgemini.com"
+                                data-tech="Google ADK, Python, Vertex AI"
+                                data-problem="Traders scale massive quantities of disparate news and signal data, making it impossible to react to market shifts instantly."
+                                data-solution="A real-time data ingestion engine utilizing ML to cross-reference global financial indicators and instantly alert users to highly probable price movements."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                        alt="AI-Powered Stock Market Signal & Price Movement Analytics Platform">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI-Powered Stock Market Signal & Price Movement Analytics
+                                        Platform</h3>
+                                    <p class="tile__description">Real-time analytics platform digesting financial
+                                        signals to forecast price movements using ML.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="AI Property Open Banking"
+                                data-phase="Building Phase"
+                                data-desc="Integrating open banking APIs with property evaluation models for comprehensive financial risk scoring."
+                                data-contact-name="Sudeep Sujit Das" data-contact-email="sudeep-sujit.das@capgemini.com"
+                                data-tech="Python, Open Banking APIs, GCP"
+                                data-problem="Financial institutions evaluate property loans without fully integrating a client&#39;s real-time aggregated banking health."
+                                data-solution="Fuses real-time Open Banking APIs with property valuation models, delivering a holistic, instant financial risk profile for both the asset and the borrower."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="AI Property Open Banking">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI Property Open Banking</h3>
+                                    <p class="tile__description">Integrating open banking APIs with property evaluation
+                                        models for comprehensive financial risk scoring.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Open Banking Flow for Insurance"
+                                data-phase="Building Phase"
+                                data-desc="Seamless integrations with open banking networks to verify and automate insurance premium structures."
+                                data-contact-name="Sai Spandan Jena" data-contact-email="sai-spandan.jena@capgemini.com"
+                                data-tech="Open Banking APIs, LangChain, Google ADK"
+                                data-problem="Verifying a client&#39;s financial stability during insurance onboarding is manual, intrusive, and relies on outdated credit files."
+                                data-solution="Connects directly to Open Banking networks to securely and instantly verify financial integrity, calculating dynamic premiums based on real-time financial behaviors."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Open Banking Flow for Insurance">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Open Banking Flow for Insurance</h3>
+                                    <p class="tile__description">Seamless integrations with open banking networks to
+                                        verify and automate insurance premium structures.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Predictive Customer Lifetime Value (CLV)"
+                                data-phase="Building Phase"
+                                data-desc="A system that predicts Customer Lifetime Value (CLV) using historical transactions and engagement data to help businesses optimize retention and marketing strategies."
+                                data-contact-name="Chinmaya Pradhan" data-contact-email="chinmaya.pradhan@capgemini.com"
+                                data-tech="Langchain, LangGraph, Python, Vertex AI, FastAPI, ML Models"
+                                data-problem="Companies struggle to identify high-value customers, leading to inefficient marketing spend and poor retention planning."
+                                data-solution="Build a predictive CLV platform using Google Vertex AI, Python/FastAPI for APIs, LangGraph agents for automation, and a simple UI to deliver actionable insights and customer segmentation."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Predictive Customer Lifetime Value (CLV)">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Predictive Customer Lifetime Value (CLV)</h3>
+                                    <p class="tile__description">A system that predicts Customer Lifetime Value (CLV)
+                                        using historical transactions and engagement data to help businesses optimize
+                                        retention and marketing strategies.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Insurance Claims Processing"
+                                data-phase="Building Phase"
+                                data-desc="An AI agent built with Google ADK delivers comprehensive insurance assistance and automation,  providing intelligent customer support and streamlined operations."
+                                data-contact-name="J, Gowtham" data-contact-email="gowtham.j@capgemini.com"
+                                data-tech="Google ADK, GCP(Big query,buckets,vertex AI), Gmail API"
+                                data-problem="Insurance companies struggle with slow, error-prone manual processes that cannot meet 24/7 customer  demands, creating a need for intelligent agents for support and claim processing."
+                                data-solution="The Google ADK-powered agent offers real-time insurance guidance, claim handling, and policy management, reducing response times, improving  accuracy, and ensuring a consistent customer experience across all touchpoints."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Insurance Claims Processing">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Insurance Claims Processing</h3>
+                                    <p class="tile__description">An AI agent built with Google ADK delivers
+                                        comprehensive insurance assistance and automation, providing intelligent
+                                        customer support and streamlined operations.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Employee Access Control in Financial Firms"
+                                data-phase="Building Phase"
+                                data-desc="Controls internal access to sensitive systems using facial authentication."
+                                data-contact-name="G.Krishna Chaitanya"
+                                data-contact-email="gummadavelli.krishna-chaitanya@capgemini.com" data-tech="GCP"
+                                data-problem="Stolen credentials or insider threats pose a serious risk to data integrity."
+                                data-solution="Employees use facial recognition via InstantID to gain access to internal dashboards, trading terminals, or claims systems."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                        alt="Employee Access Control in Financial Firms">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Employee Access Control in Financial Firms</h3>
+                                    <p class="tile__description">Controls internal access to sensitive systems using
+                                        facial authentication.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Voice Financial Advisor"
+                                data-phase="Building Phase"
+                                data-desc="AI voice assistant provides personalized financial advice."
+                                data-contact-name="Yogesh s" data-contact-email="yogesh.a.s@capgemini.com"
+                                data-tech="GCP" data-problem="Many customers struggle with financial decisions."
+                                data-solution="Voice assistant offers tailored financial advice."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="Voice Financial Advisor">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Voice Financial Advisor</h3>
+                                    <p class="tile__description">AI voice assistant provides personalized financial
+                                        advice.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Credit Card Fraud Detection"
+                                data-phase="Building Phase"
+                                data-desc="Flags fraudulent credit card purchases instantly."
+                                data-contact-name="Abhishek Patro" data-contact-email="abhishek.patro@capgemini.com"
+                                data-tech="Python" data-problem="Credit card fraud causes billions in losses annually."
+                                data-solution="AI analyzes cardholder spending patterns to detect anomalies."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400" alt="Credit Risk Assessment">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Credit Card Fraud Detection</h3>
+                                    <p class="tile__description">Flags fraudulent credit card purchases instantly.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="AI-Powered Insurance Claim Verification System" data-phase="Building Phase"
+                                data-desc="Detects AI-generated or manipulated videos submitted as part of insurance claims."
+                                data-contact-name="Avinash Singh" data-contact-email="avinash.f.singh@capgemini.com"
+                                data-tech="Python, GCP, langchain, Gemini-api"
+                                data-problem="Claimants may use deepfake content to fabricate events like damage or theft."
+                                data-solution="AI examines video metadata, frame inconsistencies, and facial distortions to identify manipulated video claims."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="AI-Powered Insurance Claim Verification System">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI-Powered Insurance Claim Verification System</h3>
+                                    <p class="tile__description">Detects AI-generated or manipulated videos submitted as
+                                        part of insurance claims.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Claims Process Automation"
+                                data-phase="Building Phase"
+                                data-desc="Voice agents guide customers through the insurance claims process, collecting necessary information."
+                                data-contact-name="Sushma Amalkar S" data-contact-email="sushma.amalkar-s@capgemini.com"
+                                data-tech="Python,GCP,Vogent.ai"
+                                data-problem="Manual claim processing is slow and prone to errors, leading to dissatisfaction and delays in claim settlements."
+                                data-solution="Vogent.ai automates the claims process, handling data collection and post-call analysis for faster and more accurate claims processing."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Claims Process Automation">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Claims Process Automation</h3>
+                                    <p class="tile__description">Voice agents guide customers through the insurance
+                                        claims process, collecting necessary information.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="Intelligent Mutual Fund Prospectus Document Processing"
+                                data-phase="Building Phase"
+                                data-desc="Automates the extraction and understanding of mutual fund documents using AI."
+                                data-contact-name="Nancy Dhakate" data-contact-email="nancy.dhakate@capgemini.com"
+                                data-tech="Python"
+                                data-problem="Manual processing of mutual fund prospectuses is time-consuming, error-prone, and requires domain expertise."
+                                data-solution="Uses Generative AI to extract, summarize, and interpret key information from mutual fund documents, improving efficiency and accuracy."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                        alt="Intelligent Mutual Fund Prospectus Document Processing">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Intelligent Mutual Fund Prospectus Document Processing</h3>
+                                    <p class="tile__description">Automates the extraction and understanding of mutual
+                                        fund documents using AI.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Ecommerce Transaction Fraud Prevention"
+                                data-phase="Building Phase"
+                                data-desc="Identifies fraudulent purchases on online platforms."
+                                data-contact-name="Shaiba Sultana Nayab"
+                                data-contact-email="shaiba-sulthana.sulthana@capgemini.com" data-tech="GCP"
+                                data-problem="Fraudulent orders result in chargebacks and revenue loss."
+                                data-solution="AI evaluates hundreds of signals including IP, device, and order history to approve or block transactions."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Ecommerce Transaction Fraud Prevention">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Ecommerce Transaction Fraud Prevention</h3>
+                                    <p class="tile__description">Identifies fraudulent purchases on online platforms.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Policy Recommendations"
+                                data-phase="Building Phase" data-desc="Suggests best-fit insurance policies."
+                                data-contact-name="Shiwangi Sinha" data-contact-email="shiwangi.a.sinha@capgemini.com"
+                                data-tech="Python,langchain" data-problem="Customers struggle to choose policies"
+                                data-solution="AI matches policies to customer profiles"
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Policy Recommendations">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Policy Recommendations</h3>
+                                    <p class="tile__description">Suggests best-fit insurance policies.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="LLM-based Policy Comparison Tool"
+                                data-phase="Building Phase"
+                                data-desc="Summarizes and compares insurance policies using AI."
+                                data-contact-name="Shreya Sadul" data-contact-email="shreya.sadul@capgemini.com"
+                                data-tech="Python,langchain, langGraph"
+                                data-problem="Customers struggle to compare complex documents."
+                                data-solution="LLMs extract and contrast key policy terms."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="LLM-based Policy Comparison Tool">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">LLM-based Policy Comparison Tool</h3>
+                                    <p class="tile__description">Summarizes and compares insurance policies using AI.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="AI for Insurance Underwriting in Agriculture" data-phase="Building Phase"
+                                data-desc="Simplify policy documents using LLMs." data-contact-name="Jai Aditya"
+                                data-contact-email="jai-aditya.b@capgemini.com" data-tech="Pyhton,Langchain,LangGraph"
+                                data-problem="Insurance documents are hard to understand."
+                                data-solution="Use LLMs to rewrite policies in customer-friendly language."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="AI for Insurance Underwriting in Agriculture">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI for Insurance Underwriting in Agriculture</h3>
+                                    <p class="tile__description">Simplify policy documents using LLMs.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Claim Prediction"
+                                data-phase="Building Phase"
+                                data-desc="Predicts like likelihood and cost of insurance claims."
+                                data-contact-name="Himani Rodle" data-contact-email="himani.rodle@capgemini.com"
+                                data-tech="Python" data-problem="High variance in claim costs."
+                                data-solution="Regression models trained on historical data."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Claim Severity Prediction">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Claim Prediction</h3>
+                                    <p class="tile__description">Predicts like likelihood and cost of insurance claims.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Financial Document Processing"
+                                data-phase="Building Phase"
+                                data-desc="AI extracts key information from financial documents (e.g., tax forms, invoices) for easier processing."
+                                data-contact-name="Krupal Kamalkumar Lad"
+                                data-contact-email="lad-krupal.kamalkumar@capgemini.com"
+                                data-tech="Google ADK, GCP(Big query, buckets, vertex AI), Document AI API"
+                                data-problem="Manually processing financial documents is time-consuming and error-prone."
+                                data-solution="implement an automated financial document processing pipeline using ADK."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Financial Document Processing">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Financial Document Processing</h3>
+                                    <p class="tile__description">AI extracts key information from financial documents
+                                        (e.g., tax forms, invoices) for easier processing.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Claims Anomaly Detection"
+                                data-phase="Building Phase" data-desc="Detect false or suspicious claims in real time."
+                                data-contact-name="Ronit Barik" data-contact-email="ronit.barik@capgemini.com"
+                                data-tech="Python"
+                                data-problem="High number of fraudulent insurance claims burdens the system."
+                                data-solution="Kafka streams claim data; Spark flags anomalies using clustering and classification models."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Claims Anomaly Detection">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Claims Anomaly Detection</h3>
+                                    <p class="tile__description">Detect false or suspicious claims in real time.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Voice Call Summarization"
+                                data-phase="Building Phase"
+                                data-desc="Summarizes and tags customer service calls for audit and quality."
+                                data-contact-name="Raksha Rameshrao Thakare"
+                                data-contact-email="raksha-rameshrao.thakare@capgemini.com" data-tech="Uniphore/GCP"
+                                data-problem="Reviewing and auditing hours of calls manually is inefficient."
+                                data-solution="AI listens to calls, summarizes content, flags red flags, and stores notes automatically."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Voice Call Summarization">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Voice Call Summarization</h3>
+                                    <p class="tile__description">Summarizes and tags customer service calls for audit
+                                        and quality.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Credit Card Fraud Detection"
+                                data-phase="Building Phase"
+                                data-desc="Flags fraudulent credit card purchases instantly."
+                                data-contact-name="Abhishek Tiwari" data-contact-email="abhishek.i.tiwari@capgemini.com"
+                                data-tech="Python" data-problem="Credit card fraud causes billions in losses annually."
+                                data-solution="AI analyzes cardholder spending patterns to detect anomalies."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Credit Card Fraud Detection">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Credit Card Fraud Detection</h3>
+                                    <p class="tile__description">Flags fraudulent credit card purchases instantly.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="KYC Document Forgery Detection"
+                                data-phase="Building Phase"
+                                data-desc="Identifies tampered or fake documents during customer onboarding."
+                                data-contact-name="Govind Kumar" data-contact-email="govind.kumar@capgemini.com"
+                                data-tech="GCP"
+                                data-problem="Manual checks of IDs and documents are error-prone and time-consuming."
+                                data-solution="AI scans and compares document metadata, image consistency, and cross-references to validate authenticity."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="KYC Document Forgery Detection">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">KYC Document Forgery Detection</h3>
+                                    <p class="tile__description">Identifies tampered or fake documents during customer
+                                        onboarding.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Predictive Analytics for Claims Cost"
+                                data-phase="Building Phase" data-desc="Forecasts cost of insurance claims"
+                                data-contact-name="Satti Santhoshi" data-contact-email="satti.santhoshi@capgemini.com"
+                                data-tech="Google ADK" data-problem="Underestimating costs affects profitability"
+                                data-solution="AI predicts claim amounts and litigation risk"
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Predictive Analytics for Claims Cost">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Predictive Analytics for Claims Cost</h3>
+                                    <p class="tile__description">Forecasts cost of insurance claims</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Claims Processing"
+                                data-phase="Building Phase" data-desc="Speed up claims using AI and image recognition."
+                                data-contact-name="Divya Tulasi Pallakaila"
+                                data-contact-email="divya-tulasi.pallakila@capgemini.com" data-tech="Google ADK"
+                                data-problem="Manual claims processing is slow and inefficient."
+                                data-solution="Use AI to verify documents and assess damage automatically."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400" alt="Algorithmic Trading Strategies">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Claims Processing</h3>
+                                    <p class="tile__description">Speed up claims using AI and image recognition.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Claims Damage Assessment (Images)"
+                                data-phase="Building Phase" data-desc="Evaluates car damage from uploaded photos."
+                                data-contact-name="Shubham Patil" data-contact-email="shubham.i.patil@capgemini.com"
+                                data-tech="Google ADK"
+                                data-problem="Manual damage review is time-consuming and inconsistent."
+                                data-solution="AI detects and classifies damage using computer vision to speed up claim approvals."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Claims Damage Assessment (Images)">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Claims Damage Assessment (Images)</h3>
+                                    <p class="tile__description">Evaluates car damage from uploaded photos.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance recommendation Engine"
+                                data-phase="Building Phase"
+                                data-desc="Suggest the best insurance products based on user profile."
+                                data-contact-name="Saikiran Ijjada" data-contact-email="sai-kiran.ijjada@capgemini.com"
+                                data-tech="python" data-problem="Customers are overwhelmed by choices."
+                                data-solution="Use collaborative filtering to recommend policies."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance recommendation Engine">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance recommendation Engine</h3>
+                                    <p class="tile__description">Suggest the best insurance products based on user
+                                        profile.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Claims Process Automation"
+                                data-phase="Building Phase"
+                                data-desc="Agents guide customers through the insurance claims process, collecting necessary information."
+                                data-contact-name="Vadde Nandini" data-contact-email="vadde.nandini@capgemini.com"
+                                data-tech="Google ADK"
+                                data-problem="Manual claim processing is slow and prone to errors, leading to dissatisfaction and delays in claim settlements."
+                                data-solution="Build an ADK-based voice agent that automates claim intake (guided Q&A) processing."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Claims Process Automation">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Claims Process Automation</h3>
+                                    <p class="tile__description">Agents guide customers through the insurance claims
+                                        process, collecting necessary information.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Policy Recommendation (Insurance)"
+                                data-phase="Building Phase"
+                                data-desc="AI suggests personalized insurance policies based on customer data."
+                                data-contact-name="Princi Porwal" data-contact-email="princi.porwal@capgemini.com"
+                                data-tech="GCP"
+                                data-problem="Standard policy offerings may not fit individual customer needs."
+                                data-solution="AI analyzes customer profiles to recommend tailored insurance products."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Policy Recommendation (Insurance)">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Policy Recommendation (Insurance)</h3>
+                                    <p class="tile__description">AI suggests personalized insurance policies based on
+                                        customer data.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Deepfake Video Insurance Fraud Detection"
+                                data-phase="Building Phase"
+                                data-desc="Detects AI-generated or manipulated videos submitted as part of insurance claims."
+                                data-contact-name="Sanjay Narayanan"
+                                data-contact-email="r-sanjay.narayanan@capgemini.com" data-tech="LangChain LangGraph"
+                                data-problem="Claimants may use deepfake content to fabricate events like damage or theft."
+                                data-solution="AI examines video metadata, frame inconsistencies, and facial distortions to identify manipulated video claims."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Deepfake Video Insurance Fraud Detection">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Deepfake Video Insurance Fraud Detection</h3>
+                                    <p class="tile__description">Detects AI-generated or manipulated videos submitted as
+                                        part of insurance claims.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Claims Reporting"
+                                data-phase="Building Phase" data-desc="Customers report insurance claims."
+                                data-contact-name="Tanvi Gupta" data-contact-email="tanvi.gupta@capgemini.com"
+                                data-tech="GCP" data-problem="Claim reporting can be slow and complicated."
+                                data-solution="AI guides customers through the claims process."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="Sentiment Analysis for Claims">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Claims Reporting</h3>
+                                    <p class="tile__description">Customers report insurance claims.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Claims Damage Assessment (Images)"
+                                data-phase="Building Phase"
+                                data-desc="Evaluates car/property damage from uploaded photos."
+                                data-contact-name="Ruchitha I"
+                                data-contact-email="ruchitha.venkata-naga-sai-ruchitha@capgemini.com"
+                                data-tech="Google-adk"
+                                data-problem="Manual damage review is time-consuming and inconsistent."
+                                data-solution="AI detects and classifies damage using computer vision to speed up claim approvals."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Claims Damage Assessment (Images)">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Claims Damage Assessment (Images)</h3>
+                                    <p class="tile__description">Evaluates car/property damage from uploaded photos.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Personalized Insurance Premium Calculation"
+                                data-phase="Building Phase"
+                                data-desc="Uses AI to provide dynamic insurance pricing based on real-time data."
+                                data-contact-name="korlapati sushma"
+                                data-contact-email="korlapati-sushma.amrutha-sravani@capgemini.com"
+                                data-tech="Google ADK"
+                                data-problem="Static pricing fails to consider personal behavior, leading to unfair premiums."
+                                data-solution="AI adjusts premiums based on data like driving habits, health metrics, and lifestyle."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                        alt="Personalized Insurance Premium Calculation">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Personalized Insurance Premium Calculation</h3>
+                                    <p class="tile__description">Uses AI to provide dynamic insurance pricing based on
+                                        real-time data.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Customer Churn Prediction"
+                                data-phase="Building Phase"
+                                data-desc="Identifies clients likely to leave a bank or insurance provider."
+                                data-contact-name="Divyansh Kumar Sahoo"
+                                data-contact-email="divyansh-kumar.sahoo@capgemini.com" data-tech="Google ADK"
+                                data-problem="Retaining customers is more cost-effective than acquiring  new ones."
+                                data-solution="AI detects patterns in usage behaviour and flags at-risk customers."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="Customer Churn Prediction">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Customer Churn Prediction</h3>
+                                    <p class="tile__description">Identifies clients likely to leave a bank or insurance
+                                        provider.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Policy Recommendation (Insurance)"
+                                data-phase="Building Phase"
+                                data-desc="AI suggests personalized insurance policies based on customer data."
+                                data-contact-name="Prateek Mohanty" data-contact-email="prateek.a.mohanty@capgemini.com"
+                                data-tech="GCP,ADK,Python,Vertex Ai"
+                                data-problem="Standard policy offerings may not fit individual customer needs."
+                                data-solution="AI analyzes customer profiles to recommend tailored insurance products."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Policy Recommendation (Insurance)">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Policy Recommendation (Insurance)</h3>
+                                    <p class="tile__description">AI suggests personalized insurance policies based on
+                                        customer data.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Financial Forecasting"
+                                data-phase="Building Phase" data-desc="Predicts market trends and risks"
+                                data-contact-name="Vishal Porwal" data-contact-email="vishal.porwal@capgemini.com"
+                                data-tech="Google ADK, GCP(Big query, buckets, vertex AI)"
+                                data-problem="Human forecasting is slow and subjective"
+                                data-solution="AI analyzes data for accurate predictions"
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="Financial Forecasting">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Financial Forecasting</h3>
+                                    <p class="tile__description">Predicts market trends and risks</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Claims Document Classification"
+                                data-phase="Building Phase" data-desc="Automatically classify claim documents."
+                                data-contact-name="vignesh Ganesan" data-contact-email="vignesh.a.ganesan@capgemini.com"
+                                data-tech="GCP" data-problem="Manual sorting delays processing."
+                                data-solution="Use NLP and OCR to categorize documents."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Claims Document Classification">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Claims Document Classification</h3>
+                                    <p class="tile__description">Automatically classify claim documents.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Risk Scoring"
+                                data-phase="Building Phase" data-desc="AI assesses risk levels for policy applicants."
+                                data-contact-name="Sai Spandan Jena" data-contact-email="sai-spandan.jena@capgemini.com"
+                                data-tech="Google ADK"
+                                data-problem="Manual risk assessments are subjective and inconsistent."
+                                data-solution="Train models on demographics,history and environment data for consistent risk scoring."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Insurance Risk Scoring">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Risk Scoring</h3>
+                                    <p class="tile__description">AI assesses risk levels for policy applicants.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="Generative AI for Financial Report Summarization (BFSI)"
+                                data-phase="Building Phase"
+                                data-desc="Summarize lengthy financial reports using LLMs to extract key insights. key services : Document AI, Vertex AI, Cloud Storage, Cloud Run/Functions"
+                                data-contact-name="Dhanshree Dharpure"
+                                data-contact-email="dhanshree.suresh-dharpure@capgemini.com" data-tech="GCP"
+                                data-problem="Analysts spend hours reading complex reports; need faster, accurate summaries."
+                                data-solution="Google Cloud pipeline: OCR (Document AI) → Vertex AI (Gemini) summarization"
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Generative AI for Financial Report Summarization (BFSI)">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Generative AI for Financial Report Summarization (BFSI)</h3>
+                                    <p class="tile__description">Summarize lengthy financial reports using LLMs to
+                                        extract key insights. key services : Document AI, Vertex AI, Cloud Storage,
+                                        Cloud Run/Functions</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="Insurance Fraud Detection Using Image Analysis" data-phase="Building Phase"
+                                data-desc="Detects fraudulent claims using image recognition."
+                                data-contact-name="Reeshita Nigam" data-contact-email="reeshita.nigam@capgemini.com"
+                                data-tech="Python, Vertex AI Vision, LangChain, LangGraph, OpenCV"
+                                data-problem="Visual fraud in auto claims is hard to detect."
+                                data-solution="Computer vision models analyze damage photos for inconsistencies."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Fraud Detection Using Image Analysis">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Fraud Detection Using Image Analysis</h3>
+                                    <p class="tile__description">Detects fraudulent claims using image recognition.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="Intelligent Mutual Fund Prospectus Document Processing"
+                                data-phase="Building Phase"
+                                data-desc="Turn long prospectuses into Key Facts Sheets—strategy, fees, risks, holdings—with citations."
+                                data-contact-name="Dewang Bhute" data-contact-email="dewang.deepak-bhute@capgemini.com"
+                                data-tech="LangChain LangGraph"
+                                data-problem="Mutual fund prospectuses are lengthy, complex documents filled with technical jargon, regulatory disclosures, and detailed financial data."
+                                data-solution="Build an AI-powered pipeline to automatically generate Key Facts Sheets (KFS) from mutual fund prospectuses."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Intelligent Mutual Fund Prospectus Document Processing">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Intelligent Mutual Fund Prospectus Document Processing</h3>
+                                    <p class="tile__description">Turn long prospectuses into Key Facts Sheets—strategy,
+                                        fees, risks, holdings—with citations.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="AI for Insurance Underwriting in Agriculture" data-phase="Building Phase"
+                                data-desc="Simplify policy documents using LLM" data-contact-name="Riya Batra"
+                                data-contact-email="riya.batra@capgemini.com" data-tech="Python"
+                                data-problem="Insurance documents are hard to understand."
+                                data-solution="Use LLMs to rewrite policies in customer-friendly language."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="AI for Insurance Underwriting in Agriculture">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI for Insurance Underwriting in Agriculture</h3>
+                                    <p class="tile__description">Simplify policy documents using LLM</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Financial Document Processing"
+                                data-phase="Building Phase"
+                                data-desc="AI extracts key information from financial documents (e.g., tax forms, invoices) for easier processing."
+                                data-contact-name="Shruti Kumari" data-contact-email="shruti.d.kumari@capgemini.com"
+                                data-tech="Python"
+                                data-problem="Manually processing financial documents is time-consuming and error-prone."
+                                data-solution="AI-powered optical character recognition (OCR) and NLP extract critical data from documents for automatic processing."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Financial Document Processing">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Financial Document Processing</h3>
+                                    <p class="tile__description">AI extracts key information from financial documents
+                                        (e.g., tax forms, invoices) for easier processing.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="emotion detection in customer calls"
+                                data-phase="Building Phase"
+                                data-desc="This use case explores how &#39;Emotion Detection in Customer Calls&#39; can enhance operations in the banking or finance sector."
+                                data-contact-name="K v Kaushik" data-contact-email="k.v-kaushik@capgemini.com"
+                                data-tech="Python/uniphore"
+                                data-problem="Banks face challenges in efficiently handling tasks related to &#39;emotion detection in customer calls&#39;."
+                                data-solution="Leveraging AI for &#39;emotion detection in customer calls&#39; can streamline operations, improve security, and enhance customer satisfaction."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="emotion detection in customer calls">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">emotion detection in customer calls</h3>
+                                    <p class="tile__description">This use case explores how &#39;Emotion Detection in
+                                        Customer Calls&#39; can enhance operations in the banking or finance sector.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Fraud Detection in Claims."
+                                data-phase="Building Phase" data-desc="AI recognises the fraud in the claims."
+                                data-contact-name="Shivam Verma" data-contact-email="shivam.a.verma@capgemini.com"
+                                data-tech="Python"
+                                data-problem="Identifies fraudulent insurance claims. Fraudulent claims cost billions."
+                                data-solution="Pattern recognition and anomaly detection."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400" alt="Fraud Detection in Claims.">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Fraud Detection in Claims.</h3>
+                                    <p class="tile__description">AI recognises the fraud in the claims.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Dynamic Pricing for Insurance"
+                                data-phase="Building Phase" data-desc="Adjust premiums based on driving behavior."
+                                data-contact-name="Sudeep Das" data-contact-email="sudeep-sujit.das@capgemini.com"
+                                data-tech="Python"
+                                data-problem="Fixed pricing is unfair to safer drivers.Safe drivers should be awarded with marginalised premiums as they have less risk of Getting into any accidental situation,further rash riders can be penalised in terms of increased premiums for the same"
+                                data-solution="IOT based device like OBD Dongle or Mobile telematics SDK can be used to collect driving/car data furthe can be ingested through a  Data Pipeline to users  Id, Continous collection of data can further lead to a Driving score fro the Driver which can further be utlized for future premiums of the Driver"
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="Dynamic Pricing for Insurance">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Dynamic Pricing for Insurance</h3>
+                                    <p class="tile__description">Adjust premiums based on driving behavior.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Insurance Claim Assessment"
+                                data-phase="Building Phase"
+                                data-desc="AI automates claim review by analyzing submitted documents and images."
+                                data-contact-name="Vishu Chaudhary" data-contact-email="vishu.chaudhary@capgemini.com"
+                                data-tech="langchain, streamlit"
+                                data-problem="Manual claim checks cause delays and errors for farmers."
+                                data-solution="AI quickly validates claims and flags issues for faster approval."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Insurance Claim Assessment">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Insurance Claim Assessment</h3>
+                                    <p class="tile__description">AI automates claim review by analyzing submitted
+                                        documents and images.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="AI Insurance Claim Assistant"
+                                data-phase="Building Phase"
+                                data-desc="AI automates claim review by analyzing the documents and voice intake ."
+                                data-contact-name="Muskan Ganwani" data-contact-email="muskanganwani@capgemini.com"
+                                data-tech="langchain, streamlit"
+                                data-problem="This use case aims to automate the **initial insurance claim journey** using AI by simplifying claim intake, damage assessment, policy validation, and claim decision support."
+                                data-solution="The AI Insurance Claim Assistant is a Streamlit-based application that helps users raise and understand insurance claims in a guided, step-by-step manner."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="AI Insurance Claim Assistant">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI Insurance Claim Assistant</h3>
+                                    <p class="tile__description">AI automates claim review by analyzing the documents
+                                        and voice intake .</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Credit Card Fraud Detection"
+                                data-phase="Building Phase" data-desc="Flags fraudulent credit card purchases instantly"
+                                data-contact-name="Manabendra Paul" data-contact-email="manabendra.paul@capgemini.com"
+                                data-tech="GCP, ML" data-problem="Credit card fraud causes billions in losses annually."
+                                data-solution="AI analyzes cardholder spending patterns to detect anomalies."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="Credit Card Fraud Detection">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Credit Card Fraud Detection</h3>
+                                    <p class="tile__description">Flags fraudulent credit card purchases instantly</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Claim Fraud Analysisc"
+                                data-phase="Building Phase"
+                                data-desc="Detects exaggerated or falsified insurance claims."
+                                data-contact-name="Saloni" data-contact-email="saloni.c.saloni@capgemini.com"
+                                data-tech="LangChain LangGraph"
+                                data-problem="Fraudulent claims increase operational costs."
+                                data-solution="NLP and image recognition evaluate claim descriptions, documents, and photos for signs of fraud."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Claim Fraud Analysisc">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Claim Fraud Analysisc</h3>
+                                    <p class="tile__description">Detects exaggerated or falsified insurance claims.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Voice Call Summarization"
+                                data-phase="Building Phase"
+                                data-desc="Summarizes and tags customer service calls for audit and quality."
+                                data-contact-name="Shanya Jain" data-contact-email="shanya.jain@capgemini.com"
+                                data-tech="LangChain,Python,Streamlit,gemini vertex AI"
+                                data-problem="Reviewing and auditing hours of calls manually is inefficient."
+                                data-solution="AI listens to calls, generate transcript, summarizes content, flags red flags, and stores notes automatically."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Voice Call Summarization">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Voice Call Summarization</h3>
+                                    <p class="tile__description">Summarizes and tags customer service calls for audit
+                                        and quality.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="Automated Customer Support Chatbot for Banks" data-phase="Building Phase"
+                                data-desc="Al chatbot that provides banking services like checking balance, transferring money, etc."
+                                data-contact-name="Roshani Singh Bhadoriya"
+                                data-contact-email="roshani.singh-bhadoriya@capgemini.com" data-tech="python,gcp"
+                                data-problem="" data-solution="" data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Customer Support Chatbot for Banks">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Customer Support Chatbot for Banks</h3>
+                                    <p class="tile__description">Al chatbot that provides banking services like checking
+                                        balance, transferring money, etc.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Tax Refund Estimator"
+                                data-phase="Building Phase" data-desc="Estimates potential refunds based on user inputs"
+                                data-contact-name="pradeep mamillapalli"
+                                data-contact-email="mohan-gnana-pradeep.mamillapalli@capgemini.com"
+                                data-tech="LangChain,Python,Streamlit"
+                                data-problem="Users want to know how much refund to expect before filing"
+                                data-solution="Real-time refund calculator driven by current year tax rules"
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Tax Refund Estimator">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Tax Refund Estimator</h3>
+                                    <p class="tile__description">Estimates potential refunds based on user inputs</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Claim Anomaly Detection"
+                                data-phase="Building Phase" data-desc="Detect false or suspicious claims in real time."
+                                data-contact-name="Shimpi Rawat" data-contact-email="shimpi.rawat@capgemini.com"
+                                data-tech="LangChain LangGraph"
+                                data-problem="Claims teams struggle to keep all stakeholders updated in real time."
+                                data-solution="Use LangChain for LLM-driven analysis and LangGraph for a modular workflow."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Claim Anomaly Detection">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Claim Anomaly Detection</h3>
+                                    <p class="tile__description">Detect false or suspicious claims in real time.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true"
+                                data-title="AI for Insurance Underwriting in Agriculture" data-phase="Building Phase"
+                                data-desc="Simplify policy documents using LLMs." data-contact-name="Sanskrati Gupta"
+                                data-contact-email="sanskrati.gupta@capgemini.com" data-tech="GCP"
+                                data-problem="Insurance documents are hard to understand."
+                                data-solution="Use LLMs to rewrite policies in customer-friendly language."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="AI for Insurance Underwriting in Agriculture">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI for Insurance Underwriting in Agriculture</h3>
+                                    <p class="tile__description">Simplify policy documents using LLMs.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="AI-Powered Wealth Management"
+                                data-phase="Building Phase"
+                                data-desc="Offers personalized wealth management advice based on financial goals."
+                                data-contact-name="Hemansh Sharma" data-contact-email="hemansh.sharma@capgemini.com"
+                                data-tech="LangChain, python, Streamlit"
+                                data-problem="Generic investment strategies do not cater to individual goals or needs."
+                                data-solution="AI builds custom investment portfolios based on user profiles, goals, and risk preferences."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" alt="AI-Powered Wealth Management">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI-Powered Wealth Management</h3>
+                                    <p class="tile__description">Offers personalized wealth management advice based on
+                                        financial goals.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="AI-Powered Family Insurance Planning"
+                                data-phase="Building Phase"
+                                data-desc="Builds comprehensive policies covering multigenerational needs."
+                                data-contact-name="Yashika" data-contact-email="yashika.c.yashika@capgemini.com"
+                                data-tech="Google ADK"
+                                data-problem="Families struggle to optimize multi-policy planning."
+                                data-solution="AI tailors plans based on dependents, life events, and coverage gaps."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                        alt="AI-Powered Family Insurance Planning">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI-Powered Family Insurance Planning</h3>
+                                    <p class="tile__description">Builds comprehensive policies covering
+                                        multigenerational needs.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Personalized Insurance Plans"
+                                data-phase="Building Phase"
+                                data-desc="Assesses individual risk profiles and provides personalized insurance plans based on lifestyle and health."
+                                data-contact-name="Kiran" data-contact-email="kiran.kumar-v@capgemini.com"
+                                data-tech="Python"
+                                data-problem="Traditional insurance plans are one-size-fits-all and do not account for individual needs."
+                                data-solution="It personalizes insurance policies based on health data, lifestyle, and risk factors for more accurate pricing."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Personalized Policy Pricing">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Personalized Insurance Plans</h3>
+                                    <p class="tile__description">Assesses individual risk profiles and provides
+                                        personalized insurance plans based on lifestyle and health.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Automated Claims Processing in Insurance"
+                                data-phase="Building Phase"
+                                data-desc="AI streamlines end-to-end insurance claims processing."
+                                data-contact-name="vamsi krishna" data-contact-email="vamsi.krishna-t@capgemini.com"
+                                data-tech=""
+                                data-problem="Use OCR and AI to automate document verification and claim adjudication."
+                                data-solution="Use AI chatbots to collect initial claim info, photos, and context instantly."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                        alt="Automated Claims Processing in Insurance">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Automated Claims Processing in Insurance</h3>
+                                    <p class="tile__description">AI streamlines end-to-end insurance claims processing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Smart Tax Form Filler for Businesses"
+                                data-phase="Building Phase"
+                                data-desc="Auto-fills tax forms using business financial data."
+                                data-contact-name="Sakshi" data-contact-email="sakshi.b.-@capgemini.com"
+                                data-tech="Python"
+                                data-problem="Manual tax form entry is time-consuming and error-prone."
+                                data-solution="TaxGPT extracts and fills data from records with high accuracy."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Smart Tax Form Filler for Businesses">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Smart Tax Form Filler for Businesses</h3>
+                                    <p class="tile__description">Auto-fills tax forms using business financial data.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Personalized Financial Recommendations"
+                                data-phase="Building Phase"
+                                data-desc="Analyze user financial data with LLMs to deliver personalized goals and actionable recommendations for smarter financial planning."
+                                data-contact-name="Gayatri Patil" data-contact-email="gayatri.gopal-patil@capgemini.com"
+                                data-tech="Python LangChain LangGraph"
+                                data-problem="Users find it difficult to create personalized financial plans manually."
+                                data-solution="Analyze user financial data to generate tailored financial goals and actions using LLMs."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Personalized Financial Recommendations">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Personalized Financial Recommendations</h3>
+                                    <p class="tile__description">Analyze user financial data with LLMs to deliver
+                                        personalized goals and actionable recommendations for smarter financial
+                                        planning.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Financial Sentiment Analysis"
+                                data-phase="Building Phase"
+                                data-desc="Analyze news and social media for market sentiment."
+                                data-contact-name="Yash Sharma" data-contact-email="yash.e.sharma@capgemini.com"
+                                data-tech="Python" data-problem="Traders lack real-time sentiment insights."
+                                data-solution="Use NLP to extract sentiment from financial texts"
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Stock Market Sentiment Analysis">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Financial Sentiment Analysis</h3>
+                                    <p class="tile__description">Analyze news and social media for market sentiment.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Financial Literacy Chatbots"
+                                data-phase="Building Phase"
+                                data-desc="Educates users on budgeting, saving, and investing."
+                                data-contact-name="Ayush Sharma" data-contact-email="Ayush.m.sharma@capgemini.com"
+                                data-tech="GCP, ADK" data-problem="Lack of financial knowledge among users."
+                                data-solution="Conversational AI delivers personalized learning."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Financial Literacy Chatbots">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Financial Literacy Chatbots</h3>
+                                    <p class="tile__description">Educates users on budgeting, saving, and investing.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Credit Card Fraud Detection"
+                                data-phase="Building Phase"
+                                data-desc="Flags fraudulent credit card purchases instantly."
+                                data-contact-name="Kishan Ranjan" data-contact-email="kishan.ranjan@capgemini.com"
+                                data-tech="Python" data-problem="Credit card fraud causes billions in losses annually."
+                                data-solution="AI analyzes cardholder spending patterns to detect anomalies."
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="Anomalous Transaction Detection">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Credit Card Fraud Detection</h3>
+                                    <p class="tile__description">Flags fraudulent credit card purchases instantly.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Claims Fraud Detection Using Image AI"
+                                data-phase="Building Phase"
+                                data-desc="Detect altered or staged damage in images submitted during insurance claims."
+                                data-contact-name="Kusum Desai" data-contact-email="kusum.ravi-desai@capgemini.com"
+                                data-tech="Python, LangChain, LangGraph"
+                                data-problem="Visual fraud is hard to verify at scale."
+                                data-solution="Use IoT and machine learning to price policies based on driving behavior"
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Claims Fraud Detection Using Image AI">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Claims Fraud Detection Using Image AI</h3>
+                                    <p class="tile__description">Detect altered or staged damage in images submitted
+                                        during insurance claims.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Fraud Detection in Customer Calls"
+                                data-phase="Building Phase"
+                                data-desc="AI voice agents analyze the tone, speech patterns, and behaviors of customers to detect potential fraud."
+                                data-contact-name="Konanki Yamini" data-contact-email="konanki.yamini@capgemini.com"
+                                data-tech="Python"
+                                data-problem="Fraudulent transactions or calls can go unnoticed, risking financial loss and security breaches."
+                                data-solution="Vogent.ai&#39;s voice analysis tools can flag suspicious behaviors and interactions, alerting security teams for further investigation."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Fraud Detection in Customer Calls">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Fraud Detection in Customer Calls</h3>
+                                    <p class="tile__description">AI voice agents analyze the tone, speech patterns, and
+                                        behaviors of customers to detect potential fraud.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="AI for Invoice Fraud Detection"
+                                data-phase="Building Phase"
+                                data-desc="Identifies doctored or fake invoices in claims and business finance."
+                                data-contact-name="Gauri Alhat"
+                                data-contact-email="gauri.shamsundar-alhat@capgemini.com"
+                                data-tech="Python,Langraph,Langchain"
+                                data-problem="Fraudulent invoices bypass basic validation."
+                                data-solution="AI uses document forensics, cross-verification, and anomaly detection to flag risks."
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Customer Lifetime Value Estimation">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">AI for Invoice Fraud Detection</h3>
+                                    <p class="tile__description">Identifies doctored or fake invoices in claims and
+                                        business finance.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Smart AML Profile Evolution Tracker"
+                                data-phase="Building Phase"
+                                data-desc="Tracks changes in customer behavior vs. onboarding KYC."
+                                data-contact-name="Vikram Choudhary" data-contact-email="vikram.choudhary@capgemini.com"
+                                data-tech="Python, ADK"
+                                data-problem="Money laundering happens when behaviors deviate undetected."
+                                data-solution="AI alerts major deviations from expected profile over time."
+                                data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                        alt="Smart AML Profile Evolution Tracker">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Smart AML Profile Evolution Tracker</h3>
+                                    <p class="tile__description">Tracks changes in customer behavior vs. onboarding KYC.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Market Trend Forecasting"
+                                data-phase="Building Phase" data-desc="Predicts asset and sector movements"
+                                data-contact-name="Nikhil Singh" data-contact-email="NIKHIL.H.SINGH@CAPGEMINI.COM"
+                                data-tech="Langchain, GCP" data-problem="Human analysis can miss signals"
+                                data-solution="AI analyzes news, reports, and data"
+                                data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400" alt="Market Trend Forecasting">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Market Trend Forecasting</h3>
+                                    <p class="tile__description">Predicts asset and sector movements</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Insurance Claim Status via Voice Alerts"
+                                data-phase="Building Phase"
+                                data-desc="Provide automated voice alerts for insurance claim status using Google Cloud Text-to-Speech."
+                                data-contact-name="Nishu Sinha" data-contact-email="nishu.sinha@capgemini.com"
+                                data-tech="GCP" data-problem="Manual updates are slow; need quick voice notifications."
+                                data-solution="Use Text-to-Speech with Cloud Functions and Storage to generate and deliver audio alerts."
+                                data-img="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                        alt="Insurance Claim Status via Voice Alerts">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Insurance Claim Status via Voice Alerts</h3>
+                                    <p class="tile__description">Provide automated voice alerts for insurance claim
+                                        status using Google Cloud Text-to-Speech.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Personalized Financial Recommendations"
+                                data-phase="Building Phase"
+                                data-desc="Generate personalized financial goals and actions by analyzing user data using LangChain and LangGraph."
+                                data-contact-name="Patil Gayatri" data-contact-email="gayatri.gopal-patil@capgemini.com"
+                                data-tech="Python, LangChain, LangGraph"
+                                data-problem="Users find it difficult to create personalized financial plans manually."
+                                data-solution="Use LangChain for LLM-driven analysis and LangGraph for a modular workflow to deliver dynamic, tailored financial recommendations."
+                                data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400"
+                                        alt="Personalized Financial Recommendations">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Personalized Financial Recommendations</h3>
+                                    <p class="tile__description">Generate personalized financial goals and actions by
+                                        analyzing user data using LangChain and LangGraph.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="Policy Recommendation Engine"
+                                data-phase="Building Phase"
+                                data-desc="A policy recommendation engine designed to suggest the best insurance products tailored to a user&#39;s profile."
+                                data-contact-name="Bimba C" data-contact-email="bimba.c@capgemni.com" data-tech="Python"
+                                data-problem="Addresses customer overwhelm by simplifying the decision-making process when faced with numerous policy choices."
+                                data-solution="Employs collaborative filtering techniques to generate personalized policy recommendations"
+                                data-img="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400" alt="Policy Recommendation Engine">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">Policy Recommendation Engine</h3>
+                                    <p class="tile__description">A policy recommendation engine designed to suggest the
+                                        best insurance products tailored to a user&#39;s profile.</p>
+                                </div>
+                            </div>
+                            <div class="tile" data-modal="true" data-title="LLM-Insurance-Agent"
+                                data-phase="Building Phase" data-desc="Summerize Policy Info"
+                                data-contact-name="Pritimukta Nanda" data-contact-email="pritimukta.nanda@Capgemini.com"
+                                data-tech="LLM,lang chain langgraph,python"
+                                data-problem="Users Give a lot of time in finding the policy info and finding a good policy suitable for them"
+                                data-solution="" data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400"
+                                data-resources="[{&quot;label&quot;: &quot;Documentation&quot;, &quot;link&quot;: &quot;#&quot;}, {&quot;label&quot;: &quot;Repository&quot;, &quot;link&quot;: &quot;#&quot;}]">
+                                <div class="tile__thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="LLM-Insurance-Agent">
+                                </div>
+                                <div class="tile__header">
+                                    <span class="tile__phase">Building Phase</span>
+                                    <h3 class="tile__title">LLM-Insurance-Agent</h3>
+                                    <p class="tile__description">Summerize Policy Info</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-block outcome-block animate-on-scroll fade-in">
+                            <h2>Outcome</h2>
+                            <p>By day 90, engineers have successfully delivered multiple functional prototypes. They
+                                demonstrate
+                                proficiency in end-to-end development, handling complex business logic, and deploying
+                                working
+                                software.</p>
+                        </div>
+
+                        <div class="page-navigation animate-on-scroll fade-in">
+                            <a href="exploration.html" class="btn btn--secondary">&larr; Previous: Exploration</a>
+                            <a href="delivery.html" class="btn btn--primary">Next Phase: Delivery &rarr;</a>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__brand">
+                        <div class="footer__logo">
+                            <img src="../assets/capgemini-logo.svg" alt="Capgemini" style="height: 36px; width: auto; display: block;">
+                        </div>
+                        <p class="footer__tagline">Driving enterprise modernization through data and engineering.</p>
+                        <div class="footer__socials" style="display: flex; gap: 16px; margin-top: 24px;">
+                            <a href="#" aria-label="LinkedIn" style="color: rgba(255,255,255,0.7);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="#" aria-label="Twitter" style="color: rgba(255,255,255,0.7);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                            <a href="#" aria-label="GitHub" style="color: rgba(255,255,255,0.7);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="footer__links-wrapper">
+                        <div class="footer__column">
+                            <h4>Phases</h4>
+                            <div class="footer__link-list">
+                                <a href="foundation.html">Foundation</a>
+                                <a href="exploration.html">Exploration</a>
+                                <a href="building.html">Building</a>
+                                <a href="delivery.html">Delivery</a>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <h4>Resources</h4>
+                            <div class="footer__link-list">
+                                <a href="#">Documentation</a>
+                                <a href="#">Case Studies</a>
+                                <a href="#">Frameworks</a>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <h4>Company</h4>
+                            <div class="footer__link-list">
+                                <a href="#">About</a>
+                                <a href="#">Careers</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="container footer__bottom-container">
+                        <p>&copy; 2026 Global AI & Analytics. All rights reserved.</p>
+                        <div class="footer__bottom-links">
+                            <a href="#">Privacy notice</a>
+                            <a href="#">Cookie policy</a>
+                            <a href="#">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="back-to-top" class="back-to-top" aria-label="Back to Top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </div>
+            <script src="../js/theme-toggle.js"></script>
+            <script src="../js/navigation.js"></script>
+            <script src="../js/animations.js"></script>
+            <script src="../js/interactions.js"></script>
+            <script src="../js/search.js"></script>
+            <script src="../js/modal.js"></script>
+
+            <!-- Modal Markup -->
+            <!-- Modal Markup (Building Specific) -->
+            <div id="tileModalOverlay" class="modal-overlay">
+                <div class="modal-content">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-left">
+                        <img id="modalImg" src="" alt="Thumbnail">
+                    </div>
+                    <div class="modal-right">
+                        <span id="modalPhase" class="modal-phase"></span>
+                        <h2 id="modalTitle" class="modal-title"></h2>
+                        <p id="modalDesc" class="modal-description"></p>
+
+                        <div class="modal-section-title">Problem Statement</div>
+                        <p id="modalProblem" class="modal-description"
+                            style="font-size: 14px; background: rgba(255,100,100,0.05); padding: 12px; border-left: 3px solid #ff4d4d; border-radius: 4px;">
+                        </p>
+
+                        <div class="modal-section-title">Solution</div>
+                        <p id="modalSolution" class="modal-description"
+                            style="font-size: 14px; background: rgba(0,176,202,0.05); padding: 12px; border-left: 3px solid var(--color-cap-cyan); border-radius: 4px;">
+                        </p>
+
+                        <div class="modal-section-title">Technology Used</div>
+                        <p id="modalTech" class="modal-description"
+                            style="font-weight: bold; font-size: 13px; color: var(--color-cap-light-blue);"></p>
+
+                        <div class="modal-section-title">Primary Contact</div>
+                        <div class="modal-contact">
+                            <div class="modal-contact-avatar" id="modalContactAvatar"></div>
+                            <div class="modal-contact-info">
+                                <h4 id="modalContactName"></h4>
+                                <p id="modalContactEmail"
+                                    style="font-family: monospace; font-size: 13px; margin: 0; color: var(--color-text-secondary);">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal-section-title">Key Resources</div>
+                        <ul id="modalResources" class="modal-resources"></ul>
+                    </div>
+                </div>
+            </div>

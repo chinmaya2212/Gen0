@@ -1,0 +1,128 @@
+/* Internal Pages Content Structure - Capgemini Formal Design */
+
+.page-content {
+    background-color: var(--color-white);
+}
+
+.content-block {
+    margin-bottom: 40px;
+    /* Reduced from 80px */
+    max-width: 900px;
+    margin-left: 0;
+    /* Left align for Capgemini */
+    margin-right: auto;
+}
+
+.content-block h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    color: var(--color-cap-navy);
+}
+
+.content-block h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: var(--color-cap-navy);
+}
+
+.content-block p {
+    font-size: 18px;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+/* Grid for Tools and Learning Framework */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-bottom: 40px;
+    /* Reduced from 80px */
+    max-width: 1200px;
+    margin-left: 0;
+}
+
+.content-grid ul {
+    list-style: none;
+}
+
+.content-grid li {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    margin-bottom: 24px;
+    padding-left: 40px;
+    position: relative;
+    line-height: 1.6;
+}
+
+/* Custom checkmark list style */
+.content-grid li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%2300B0CA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>');
+}
+
+.content-grid li strong {
+    color: var(--color-cap-navy);
+    font-weight: 700;
+}
+
+/* Capgemini Outcome Block */
+.outcome-block {
+    background-color: var(--color-bg-light);
+    padding: 60px;
+    border-radius: 0;
+    border: none;
+    border-left: 6px solid var(--color-cap-cyan);
+    box-shadow: none;
+    text-align: left;
+    max-width: 1000px;
+}
+
+.outcome-block h2 {
+    margin-bottom: 24px;
+}
+
+.outcome-block p {
+    margin-bottom: 0;
+    color: var(--color-text-primary);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Page Navigation Buttons */
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 60px;
+    border-top: 1px solid var(--color-border);
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .outcome-block {
+        padding: 40px 24px;
+    }
+
+    .page-navigation {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .page-navigation .btn {
+        width: 100%;
+    }
+}

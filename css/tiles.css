@@ -1,0 +1,156 @@
+/* Journey Tiles Layout - Spotify Card Concept */
+.journey {
+    background-color: transparent;
+    /* Background handled by Island */
+}
+
+.section-header {
+    margin-bottom: 40px;
+    padding-left: 16px;
+    /* Align with cards */
+}
+
+.tiles-grid {
+    display: grid;
+    /* User specifically requested 4 columns */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    /* Standard Spotify gap */
+    margin-bottom: 80px;
+}
+
+/* Sharp Minimal Tile Design (Mannat & Spotify Fusion) */
+.tile {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.tile:hover {
+    transform: translateY(-8px);
+    background-color: var(--white);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-cap-cyan);
+}
+
+/* The Square Image Thumbnail (Crucial Spotify Element) */
+.tile__thumbnail {
+    width: 100%;
+    padding-bottom: 100%;
+    /* Forces exact 1:1 aspect ratio cross-browser */
+    border-radius: 8px;
+    /* Inner radius slightly smaller than card */
+    overflow: hidden;
+    margin-bottom: 16px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    /* Prevent flexbox from shrinking/stretching it */
+}
+
+.tile__thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tile:hover .tile__thumbnail img {
+    transform: scale(1.05);
+}
+
+/* Card Typography Adjustments */
+.tile__header {
+    margin-bottom: 6px;
+    min-width: 0;
+}
+
+.tile__phase {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-cap-cyan);
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.tile__title {
+    color: var(--color-text-primary);
+    /* Use primary text instead of navy for better hierarchy */
+    margin: 0;
+    font-size: 18px;
+    /* Spotify titles are relatively compact */
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    /* Single line truncation like Spotify */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tile__description {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    /* Spotify descriptions are small */
+    line-height: 1.5;
+    margin-bottom: 0;
+    min-height: 3em;
+    /* Enforce exact vertical height for 2 lines */
+    /* Two line truncation */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Removed older UI features */
+.tile__cta,
+.tile::before,
+.tile::after {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tiles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tiles-grid {
+        /* Force 2 columns on small screens, like Spotify's mobile layout */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .tile {
+        padding: 12px;
+    }
+
+    .tile__title {
+        font-size: 16px;
+    }
+
+    .tile__description {
+        display: none;
+        /* Hide descriptions on very small screens */
+    }
+}
