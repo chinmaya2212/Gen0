@@ -1,0 +1,69 @@
+/* Logo Integration Styles */
+.partner-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    
+    /* Full-width breakout */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    margin-top: 32px;
+    padding: 24px 0;
+    background: #f5f7f9; /* Solid light grey */
+    border: none;
+}
+
+.partner-logo {
+    height: 48px;
+    width: auto;
+    opacity: 1;
+    transition: all 0.3s ease;
+    border-radius: 4px; /* Consistent subtle rounding for any background-containing logos */
+}
+
+.partner-logo:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* Hero-specific adjustments */
+.hero .partner-logos {
+    margin-top: 64px;
+}
+
+/* Footer-specific adjustments */
+.footer__logo-grid {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.footer .partner-logos {
+    margin-top: 24px;
+    margin-bottom: -24px; /* Align with footer padding if needed */
+    background: #f5f7f9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .partner-logos {
+        gap: 24px;
+        justify-content: center !important;
+    }
+    
+    .partner-logo {
+        height: 36px;
+    }
+    
+    .hero .partner-logos {
+        margin-top: 32px;
+    }
+}

@@ -28,18 +28,6 @@
     --font-primary: "Outfit", "Inter", sans-serif;
 }
 
-/* Dark Mode Variables */
-[data-theme="dark"] {
-    --color-bg-light: #050A1A;
-    --color-white: #0A1432;
-    --color-border: #1E293B;
-    --color-text-primary: #F8FAFC;
-    --color-text-secondary: #94A3B8;
-    
-    --glass-bg: rgba(10, 20, 50, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-}
 
 /* Reset and Base Styles */
 * {
